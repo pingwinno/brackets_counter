@@ -14,7 +14,7 @@ public class BracketPairsCounter {
         BigInteger reminder = BigInteger.ONE;
         for (int i = 0; i < n; i++) {
             BigInteger iBig = BigInteger.valueOf(i);
-            //Calculate Catalan number. Use BigInteger for really big numbers of brackets ( > 2000).
+            //Calculate Catalan number. BigInteger used for really big numbers of brackets ( > 2000).
             //Calculates can take more time than you expect on numbers > 100000.
             reminder = reminder.multiply(two.multiply(two.multiply(iBig).add(BigInteger.ONE))).divide(iBig.add(two));
         }

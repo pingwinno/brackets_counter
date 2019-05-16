@@ -2,8 +2,8 @@ package com.pingwinno;
 
 import java.util.Scanner;
 
+// This app counts number of correct brackets expressions. It uses Catalan number calculations.
 public class Main {
-
 
     public static void main(String[] args) {
         int pairsNum;
